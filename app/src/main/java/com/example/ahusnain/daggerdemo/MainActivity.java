@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.example.ahusnain.daggerdemo.car.Car;
 import com.example.ahusnain.daggerdemo.dagger.CarComponent;
+import com.example.ahusnain.daggerdemo.dagger.DaggerCarComponent;
 import com.example.ahusnain.daggerdemo.dagger.WheelModule;
 
 import javax.inject.Inject;
