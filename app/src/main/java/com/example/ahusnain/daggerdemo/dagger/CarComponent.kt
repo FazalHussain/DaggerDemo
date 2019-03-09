@@ -8,7 +8,7 @@ import dagger.Component
  * Component interface that is responsible for creating dependency graph.
  */
 
-@Component (modules = arrayOf(WheelModule::class, PetrolEngineModule::class))
+@Component (modules = arrayOf(WheelModule::class, DieselEngineModule::class))
 interface CarComponent {
     /**
      * Component just create car object on thier end and provide a car

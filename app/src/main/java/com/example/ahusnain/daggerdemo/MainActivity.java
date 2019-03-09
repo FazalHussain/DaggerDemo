@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.example.ahusnain.daggerdemo.car.Car;
 import com.example.ahusnain.daggerdemo.dagger.CarComponent;
 import com.example.ahusnain.daggerdemo.dagger.DaggerCarComponent;
+import com.example.ahusnain.daggerdemo.dagger.DieselEngineModule;
 import com.example.ahusnain.daggerdemo.dagger.WheelModule;
 
 import javax.inject.Inject;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         CarComponent carComponent = DaggerCarComponent.builder().
                 wheelModule(WheelModule.INSTANCE).
+                dieselEngineModule(new DieselEngineModule(100)).
                 build();
         carComponent.inject(this);
 
